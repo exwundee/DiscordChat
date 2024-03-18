@@ -1,0 +1,5 @@
+bot-token: ''
+guild-id: ''
+channel-id: ''
+
+disc2mc-message: '&9Discord &8| &f%effective_name% &8» &f%message%'
