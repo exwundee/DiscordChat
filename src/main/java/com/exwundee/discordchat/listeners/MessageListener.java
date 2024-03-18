@@ -17,7 +17,7 @@ public class MessageListener extends ListenerAdapter {
     @Override
     public void onMessageReceived(MessageReceivedEvent event) {
         if (!event.getAuthor().isBot()
-                && event.getChannel().getId().equalsIgnoreCase("1219267279556972615")) {
+                && event.getChannel().getId().equalsIgnoreCase(plugin.getConfig().getString("channel-id"))) {
             Bukkit.getServer().broadcastMessage(
                     ChatColor.translateAlternateColorCodes(
                             '&', plugin.getConfig().getString("disc2mc-message")
